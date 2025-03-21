@@ -13,12 +13,7 @@ function Modal({ isOpen, onClose }) {
   const [isSaved, setIsSaved] = useState(false);
 
   useEffect(() => {
-    const storedValue = sessionStorage.getItem(SESSION_STORAGE_KEY);
 
-    if (storedValue === newValue) {
-      console.log('⚠️ 이미 입력한 값입니다 (세션 기준).');
-      return;
-    }
     const saveVisitor = async () => {
       if (!fingerprint) return;
 
