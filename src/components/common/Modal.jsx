@@ -30,16 +30,27 @@ function Modal({ isOpen, onClose }) {
 
     saveVisitor();
   }, [fingerprint]);
-
+  const SESSION_STORAGE_KEY = 'submittedInput';
   const handleSave = async () => {
     if (!fingerprint || !inputValue.trim()) return;
+    const newValue = inputValue.trim();
 
+    // 1️⃣ 세션스토리지에서 기존 값 가져오기
+    const storedValue = sessionStorage.getItem(SESSION_STORAGE_KEY);
+
+    // 2️⃣ 중복이면 저장 안 함
+    if (storedValue === newValue) {
+      console.log('⚠️ 이미 입력한 값입니다 (세션 기준).');
+      return;
+    }
+    
     try {
       await addDoc(collection(db, 'visitor_inputs'), {
         visitor_id: fingerprint,
         input_text: inputValue,
         timestamp: new Date(),
       });
+      sessionStorage.setItem(SESSION_STORAGE_KEY, newValue);
 
       setIsSaved(true);
       setInputValue('');
