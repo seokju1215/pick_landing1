@@ -1,6 +1,6 @@
 import React from 'react';
 
-function ApplyButton({ width, height, fontSize }) {
+function ApplyButton({ width, height, fontSize, onClick}) {
     return (
         <div style={{
             width: width,
@@ -12,7 +12,10 @@ function ApplyButton({ width, height, fontSize }) {
             alignContent : "center",
             alignItems : "center",
             justifyContent : "center",
-        }}>
+            cursor: 'pointer',
+        }}
+        onClick={onClick}
+        >
             <p style={{fontSize : fontSize}}> 더 알아보기 →</p>
         </div>
     );

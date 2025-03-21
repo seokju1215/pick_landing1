@@ -1,7 +1,7 @@
 import React from 'react';
 import ApplyButton from '../common/ApplyButton';
 
-function FixedButton({}) {
+function FixedButton({onClick}) {
   return (
     <div
       style={{
@@ -13,7 +13,7 @@ function FixedButton({}) {
         textAlign: 'center'
       }}
     >
-      <ApplyButton width="90%" height = "40px" fontSize= "16px"/>
+      <ApplyButton width="90%" height = "40px" fontSize= "16px" onClick={onClick}/>
     </div>
   );
 }
