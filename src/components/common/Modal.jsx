@@ -4,11 +4,9 @@ import useFingerprint from '../../hooks/useFingerprint';
 import { db, collection, addDoc, getDocs, query, where } from '../../api/firebase';
 import closeButton from '../../assets/closeButton.svg';
 
-function Modal({ isOpen, onClose }) {
+function Modal({ isOpen, onClose , fingerprint}) {
   if (!isOpen) return null;
   const isMobile = useIsMobile();
-
-  const fingerprint = useFingerprint();
   const [inputValue, setInputValue] = useState('');
   const [isSaved, setIsSaved] = useState(false);
 

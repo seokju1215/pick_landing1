@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import mobileview_booklanding from '../../assets/mobileview_booklanding.svg'
 import FixedButton from './FixedButton';
 import Modal from '../common/Modal';
+import useFingerprint from '../../hooks/useFingerprint';
 
 function LandingMobile() {
     const [isModalOpen, setIsModalOpen] = useState(false);
-
+    const fingerprint = useFingerprint();
     return (
         <div style={{ position: 'relative', minHeight: '100vh', paddingBottom: '80px' }}>
             <div
@@ -24,7 +25,7 @@ function LandingMobile() {
                 />
             </div>
             <FixedButton onClick={() => setIsModalOpen(true)}/>
-            <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
+            <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} fingerprint={fingerprint} />
         </div>
     );
 }
