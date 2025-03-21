@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import mobileview_booklanding from '../../assets/mobileview_booklanding.svg'
+import mobileview_booklanding from '../../assets/mobileview_booklanding.png'
 import FixedButton from './FixedButton';
 import Modal from '../common/Modal';
 import useFingerprint from '../../hooks/useFingerprint';

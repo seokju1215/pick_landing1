@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import DesktopLeftView from '../../assets/DesktopLeftView.svg';
-import DesktopRightView from '../../assets/DesktopRightView.svg';
+import DesktopLeftView from '../../assets/DesktopLeftView.png';
+import DesktopRightView from '../../assets/DesktopRightView.png';
 import ApplyButton from '../common/ApplyButton';
 import Modal from '../common/Modal';
 import useFingerprint from '../../hooks/useFingerprint';
