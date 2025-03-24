@@ -18,8 +18,8 @@ function LandingDesktop() {
                 <ApplyButton width="400px" height="60px" fontSize="20px" onClick={() => setIsModalOpen(true)} />
             </div>
             <div style={{ display: "flex", flexDirection: "row", gap : "20px"}}>
-                <img src={DesktopLeft} alt="DesktopRightimage1" style={{ width: "250px" }} />
-                <img src={DesktopRight} alt="DesktopRightimage2" style={{ width: "250px" }} />
+                <img src={DesktopLeft} alt="DesktopRightimage1" style={{ width: "250px", border : '1px solid #E8E8E8'  }} />
+                <img src={DesktopRight} alt="DesktopRightimage2" style={{ width: "250px", border : '1px solid #E8E8E8' }} />
             </div>
             <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} fingerprint={fingerprint} />
         </div>
