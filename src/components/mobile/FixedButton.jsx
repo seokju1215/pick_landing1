@@ -7,7 +7,7 @@ function FixedButton({onClick}) {
       style={{
         position: 'fixed',
         bottom: '20px',
-        left: '60%',
+        left: '55%',
         transform: 'translateX(-50%)',
         width: '90%',
         textAlign: 'center'
