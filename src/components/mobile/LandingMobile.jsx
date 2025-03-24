@@ -10,7 +10,7 @@ function LandingMobile() {
     const [isModalOpen, setIsModalOpen] = useState(false);
     const fingerprint = useFingerprint();
     return (
-        <div style={{ position: 'relative', paddingBottom: '60px', width : '100vw'}}>
+        <div style={{ position: 'relative', paddingBottom: '60px', width : '100%'}}>
             <div
                 style={{
                     display: 'flex',
