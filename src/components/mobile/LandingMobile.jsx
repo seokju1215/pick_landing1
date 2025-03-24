@@ -15,7 +15,7 @@ function LandingMobile() {
                 style={{
                     display: 'flex',
                     justifyContent: 'center',
-                    padding: '60px 20px',
+                    padding: '60px 0px',
                     width: '100%',
                     alignItems: 'center',
                     flexDirection: 'column'
