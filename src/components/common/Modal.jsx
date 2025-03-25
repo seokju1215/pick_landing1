@@ -20,7 +20,10 @@ function Modal({ isOpen, onClose , fingerprint}) {
         const querySnapshot = await getDocs(q);
 
         if (querySnapshot.empty) {
-          await addDoc(collection(db, 'visitors'), { visitor_id: fingerprint });
+          await addDoc(collection(db, 'visitors'), { 
+            visitor_id: fingerprint,
+            timestamp: new Date(),
+          });
         }
       } catch (error) {
         console.error('Firebase 에러:', error);
@@ -29,6 +32,7 @@ function Modal({ isOpen, onClose , fingerprint}) {
 
     saveVisitor();
   }, [fingerprint]);
+
   const SESSION_STORAGE_KEY = 'submittedInput';
   const handleSave = async () => {
     if (!fingerprint || !inputValue.trim()) return;
