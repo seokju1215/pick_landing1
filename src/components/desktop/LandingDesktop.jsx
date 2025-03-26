@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import DesktopLeftView from '../../assets/DesktopLeftView.png';
+import DesktopLeftView from '../../assets/DesktopLeftView.svg';
 import DesktopRightView from '../../assets/DesktopRightView.png';
 import ApplyButton from '../common/ApplyButton';
 import Modal from '../common/Modal';
