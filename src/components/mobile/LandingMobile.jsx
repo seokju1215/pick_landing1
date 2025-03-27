@@ -15,7 +15,7 @@ function LandingMobile() {
                 style={{
                     display: 'flex',
                     justifyContent: 'center',
-                    padding: '80px 0px',
+                    padding: '60px 0px',
                     width: '100%',
                     alignItems: 'center',
                     flexDirection: 'column'
@@ -26,7 +26,7 @@ function LandingMobile() {
                     alt="mobileview"
                     style={{ width: '90%', maxWidth: '400px' }}
                 />
-                <div style={{ display: 'flex', flexDirection: "row", gap: "15px", marginTop: "90px", width: '90%', maxWidth: '400px' }}>
+                <div style={{ display: 'flex', flexDirection: "row", gap: "15px", marginTop: "30px", width: '90%', maxWidth: '400px' }}>
                     <div style={{ flex: 1 }}>
                         <img src={DesktopLeft} alt="mobileleft" style={{ width: '100%', height: 'auto', border : '1px solid #E8E8E8'}} />
                     </div>
