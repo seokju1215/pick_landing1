@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import DesktopLeftView from '../../assets/folk_landing_text.svg';
-import DesktopRightView from '../../assets/DesktopRightView.png';
+
 import ApplyButton from '../common/ApplyButton';
 import Modal from '../common/Modal';
 import useFingerprint from '../../hooks/useFingerprint';
@@ -14,7 +14,7 @@ function LandingDesktop() {
     const fingerprint = useFingerprint();
 
     return (
-        <div style={{ display: "flex", flexDirection: "row", justifyContent: 'center', alignItems: 'center', height: '130vh', width: "100%", gap: '200px' }}>
+        <div style={{ display: "flex", flexDirection: "row", justifyContent: 'center', alignItems: 'center', height: '1200px', width: "100%", gap: '200px' }}>
             <div style={{ display: "flex", flexDirection: "column" }}>
                 <img src={DesktopLeftView} alt="DesktopLeftView" style={{ width: "600px", marginBottom: "30px" }} />
                 <ApplyButton width="400px" height="60px" fontSize="20px" onClick={() => setIsModalOpen(true)} />
