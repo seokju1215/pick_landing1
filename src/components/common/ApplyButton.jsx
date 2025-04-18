@@ -16,7 +16,7 @@ function ApplyButton({ width, height, fontSize, onClick}) {
         }}
         onClick={onClick}
         >
-            <p style={{fontSize : fontSize}}> 더 알아보기 →</p>
+            <p style={{fontSize : fontSize}}> 지금 내 주변 구경하기 →</p>
         </div>
     );
 }
