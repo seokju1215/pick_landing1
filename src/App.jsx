@@ -9,8 +9,7 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route exact path="/" element={<Navigate to="/folk-landing" />} />
-        <Route path="/folk-landing" element={isMobile ? <LandingMobile /> : <LandingDesktop />} />
+        <Route exact path="/" element={isMobile ? <LandingMobile /> : <LandingDesktop />}  />
       </Routes>
     </Router>
   );
