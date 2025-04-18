@@ -4,10 +4,10 @@ import DesktopLeftView from '../../assets/folk_landing_text.svg';
 import ApplyButton from '../common/ApplyButton';
 import Modal from '../common/Modal';
 import useFingerprint from '../../hooks/useFingerprint';
-import DesktopLeft1 from '../../assets/folk-appview1.svg';
-import DesktopRight1 from '../../assets/folk-appview2.svg';
-import DesktopLeft2 from '../../assets/folk-appview3.svg';
-import DesktopRight2 from '../../assets/folk-appview4.svg';
+import DesktopLeft1 from '../../assets/folk-appview1.png';
+import DesktopRight1 from '../../assets/folk-appview2.png';
+import DesktopLeft2 from '../../assets/folk-appview3.png';
+import DesktopRight2 from '../../assets/folk-appview4.png';
 
 function LandingDesktop() {
     const [isModalOpen, setIsModalOpen] = useState(false);
