@@ -16,11 +16,11 @@ function Modal({ isOpen, onClose , fingerprint}) {
       if (!fingerprint) return;
 
       try {
-        const q = query(collection(db, 'visitors'), where('visitor_id', '==', fingerprint));
+        const q = query(collection(db, 'visitors2'), where('visitor_id', '==', fingerprint));
         const querySnapshot = await getDocs(q);
 
         if (querySnapshot.empty) {
-          await addDoc(collection(db, 'visitors'), { 
+          await addDoc(collection(db, 'visitors2'), { 
             visitor_id: fingerprint,
             timestamp: new Date(),
           });
@@ -48,7 +48,7 @@ function Modal({ isOpen, onClose , fingerprint}) {
     }
 
     try {
-      await addDoc(collection(db, 'visitor_inputs'), {
+      await addDoc(collection(db, 'visitor_inputs2'), {
         visitor_id: fingerprint,
         input_text: inputValue,
         timestamp: new Date(),
