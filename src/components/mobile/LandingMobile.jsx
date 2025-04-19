@@ -5,8 +5,6 @@ import Modal from '../common/Modal';
 import useFingerprint from '../../hooks/useFingerprint';
 import DesktopLeft1 from '../../assets/folk-appview1.png';
 import DesktopRight1 from '../../assets/folk-appview2.png';
-import DesktopLeft2 from '../../assets/folk-appview3.png';
-import DesktopRight2 from '../../assets/folk-appview4.png';
 
 function LandingMobile() {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -34,14 +32,6 @@ function LandingMobile() {
                     </div>
                     <div style={{ flex: 1 }}>
                         <img src={DesktopRight1} alt="mobileright" style={{ width: '100%', height: 'auto', border : '1px solid #E8E8E8' }} />
-                    </div>
-                </div>
-                <div style={{ display: 'flex', flexDirection: "row", gap: "15px", marginTop: "50px", width: '100%', maxWidth: '450px' }}>
-                    <div style={{ flex: 1 }}>
-                        <img src={DesktopLeft2} alt="mobileleft" style={{ width: '100%', height: 'auto', border : '1px solid #E8E8E8'}} />
-                    </div>
-                    <div style={{ flex: 1 }}>
-                        <img src={DesktopRight2} alt="mobileright" style={{ width: '100%', height: 'auto', border : '1px solid #E8E8E8' }} />
                     </div>
                 </div>
             </div>
