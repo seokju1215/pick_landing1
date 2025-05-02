@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import mobileContent from '../../assets/landing2_text.svg';
+import mobileContent from '../../assets/landing2_mobile_text.svg';
 import FixedButton2 from './FixedButton copy';
 import Modal2 from '../common/Modal copy';
 import useFingerprint from '../../hooks/useFingerprint';
