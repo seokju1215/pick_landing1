@@ -7,7 +7,7 @@ function App() {
   const isMobile = useIsMobile();
 
   return (
-    <Router>
+    <Router basename="/landing1">
       <Routes>
         <Route exact path="/" element={isMobile ? <LandingMobile /> : <LandingDesktop />}  />
       </Routes>
