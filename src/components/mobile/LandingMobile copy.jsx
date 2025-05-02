@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import mobileContent from '../../assets/landing2_text.svg';
-import FixedButton from './FixedButton';
+import FixedButton2 from './FixedButton copy';
 import Modal2 from '../common/Modal copy';
 import useFingerprint from '../../hooks/useFingerprint';
 import DesktopLeft1 from '../../assets/landing2-1.png';
@@ -35,7 +35,7 @@ function LandingMobile2() {
                     </div>
                 </div>
             </div>
-            <FixedButton onClick={() => setIsModalOpen(true)} />
+            <FixedButton2 onClick={() => setIsModalOpen(true)} />
             <Modal2 isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} fingerprint={fingerprint} />
         </div>
     );
