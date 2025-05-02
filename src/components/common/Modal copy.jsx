@@ -4,7 +4,7 @@ import useFingerprint from '../../hooks/useFingerprint';
 import { db, collection, addDoc, getDocs, query, where } from '../../api/firebase';
 import closeButton from '../../assets/closeButton.svg';
 
-function Modal({ isOpen, onClose , fingerprint}) {
+function Modal2({ isOpen, onClose , fingerprint}) {
   if (!isOpen) return null;
   const isMobile = useIsMobile();
   const [inputValue, setInputValue] = useState('');
@@ -16,11 +16,11 @@ function Modal({ isOpen, onClose , fingerprint}) {
       if (!fingerprint) return;
 
       try {
-        const q = query(collection(db, 'landing1_visitors'), where('visitor_id', '==', fingerprint));
+        const q = query(collection(db, 'landing2_visitors'), where('visitor_id', '==', fingerprint));
         const querySnapshot = await getDocs(q);
 
         if (querySnapshot.empty) {
-          await addDoc(collection(db, 'landing1_visitors'), { 
+          await addDoc(collection(db, 'landing2_visitors'), { 
             visitor_id: fingerprint,
             timestamp: new Date(),
           });
@@ -48,7 +48,7 @@ function Modal({ isOpen, onClose , fingerprint}) {
     }
 
     try {
-      await addDoc(collection(db, 'landing1_input'), {
+      await addDoc(collection(db, 'landing2_inputs'), {
         visitor_id: fingerprint,
         input_text: inputValue,
         timestamp: new Date(),
@@ -189,4 +189,4 @@ function Modal({ isOpen, onClose , fingerprint}) {
   );
 }
 
-export default Modal;
+export default Modal2;

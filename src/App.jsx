@@ -2,14 +2,17 @@ import { BrowserRouter as Router, Route ,Navigate, Routes } from 'react-router-d
 import useIsMobile from './hooks/useIsMobile';
 import LandingDesktop from './components/desktop/LandingDesktop';
 import LandingMobile from './components/mobile/LandingMobile';
+import LandingDesktop2 from './components/desktop/LandingDesktop copy';
+import LandingMobile2 from './components/mobile/LandingMobile copy';
 
 function App() {
   const isMobile = useIsMobile();
 
   return (
-    <Router basename="/landing1">
+    <Router>
       <Routes>
-        <Route exact path="/" element={isMobile ? <LandingMobile /> : <LandingDesktop />}  />
+        <Route exact path="/landing1" element={isMobile ? <LandingMobile /> : <LandingDesktop />}  />
+        <Route exact path="/landing2" element={isMobile ? <LandingMobile2 /> : <LandingDesktop2 />}  />
       </Routes>
     </Router>
   );
