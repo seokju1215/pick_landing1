@@ -13,8 +13,8 @@ function App() {
     <Router>
       <DynamicTitleHandler />
       <Routes>
-        <Route exact path="/landing1" element={isMobile ? <LandingMobile /> : <LandingDesktop />}  />
-        <Route exact path="/landing2" element={isMobile ? <LandingMobile2 /> : <LandingDesktop2 />}  />
+        <Route exact path="/missionpick" element={isMobile ? <LandingMobile /> : <LandingDesktop />}  />
+        <Route exact path="/mission.pick" element={isMobile ? <LandingMobile2 /> : <LandingDesktop2 />}  />
       </Routes>
     </Router>
   );
