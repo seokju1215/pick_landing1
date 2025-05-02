@@ -17,3 +17,4 @@ function useDynamicTitle() {
     }
   }, [location.pathname]);
 }
+export default useDynamicTitle;

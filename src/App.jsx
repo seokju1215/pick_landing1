@@ -4,9 +4,11 @@ import LandingDesktop from './components/desktop/LandingDesktop';
 import LandingMobile from './components/mobile/LandingMobile';
 import LandingDesktop2 from './components/desktop/LandingDesktop copy';
 import LandingMobile2 from './components/mobile/LandingMobile copy';
+import useDynamicTitle from './hooks/useDynamicTitle';
 
 function App() {
   const isMobile = useIsMobile();
+  useDynamicTitle();
 
   return (
     <Router>
