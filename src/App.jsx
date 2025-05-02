@@ -4,14 +4,14 @@ import LandingDesktop from './components/desktop/LandingDesktop';
 import LandingMobile from './components/mobile/LandingMobile';
 import LandingDesktop2 from './components/desktop/LandingDesktop copy';
 import LandingMobile2 from './components/mobile/LandingMobile copy';
-import useDynamicTitle from './hooks/useDynamicTitle';
+import DynamicTitleHandler from './hooks/useDynamicTitle';
 
 function App() {
   const isMobile = useIsMobile();
-  useDynamicTitle();
 
   return (
     <Router>
+      <DynamicTitleHandler />
       <Routes>
         <Route exact path="/landing1" element={isMobile ? <LandingMobile /> : <LandingDesktop />}  />
         <Route exact path="/landing2" element={isMobile ? <LandingMobile2 /> : <LandingDesktop2 />}  />

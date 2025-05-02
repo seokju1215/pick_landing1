@@ -2,7 +2,7 @@
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 
-function useDynamicTitle() {
+function DynamicTitleHandler() {
   const location = useLocation();
 
   useEffect(() => {
@@ -16,5 +16,6 @@ function useDynamicTitle() {
       document.title = ''; // 기본값
     }
   }, [location.pathname]);
+  return null;
 }
-export default useDynamicTitle;
+export default DynamicTitleHandler;
