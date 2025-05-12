@@ -4,7 +4,7 @@ import FixedButton_logue from './FixedButton_copy_logue';
 import Modal_logue from '../common/Modal_copy_logue';
 import useFingerprint from '../../hooks/useFingerprint';
 import DesktopLeft1 from '../../assets/logue/logue-appview1.png';
-import DesktopRight1 from '../../assets/logue/logue-appview1.png';
+import DesktopRight1 from '../../assets/logue/logue-appview2.png';
 
 function LandingMobile_logue() {
     const [isModalOpen, setIsModalOpen] = useState(false);
