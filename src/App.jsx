@@ -7,6 +7,8 @@ import LandingMobile2 from './components/mobile/LandingMobile copy';
 import LandingDesktop_logue from './components/desktop/LandingDesktop_copy_logue';
 import LandingMobile_logue from './components/mobile/LandingMobile_copy_logue';
 import DynamicTitleHandler from './hooks/useDynamicTitle';
+import LandingMobile_publisher from './components/mobile/LandingMobile_publisher';
+import LandingDesktop_publisher from './components/desktop/LandingDesktop_publisher';
 
 function App() {
   const isMobile = useIsMobile();
@@ -18,7 +20,7 @@ function App() {
         <Route exact path="/missionpick" element={isMobile ? <LandingMobile /> : <LandingDesktop />}  />
         <Route exact path="/mission.pick" element={isMobile ? <LandingMobile2 /> : <LandingDesktop2 />}  />
         <Route exact path="/logue" element={isMobile ? <LandingMobile_logue /> : <LandingDesktop_logue />}  />
-
+        <Route exact path="/publisher" element={isMobile ? <LandingMobile_publisher /> : <LandingDesktop_publisher />}  />
       </Routes>
     </Router>
   );
