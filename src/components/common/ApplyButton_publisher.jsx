@@ -7,7 +7,7 @@ function ApplyButton_publisher({ width, height, fontSize, onClick}) {
             height: height,
             backgroundColor: 'white',
             border: "3px solid #000000",
-            borderRadius: "20px",
+            borderRadius: "10px",
             display : 'flex',
             alignContent : "center",
             alignItems : "center",
