@@ -122,7 +122,7 @@ function Modal_publisher({ isOpen, onClose , fingerprint}) {
         {/* 모달 내용 */}
 
         <p style={{
-          fontSize: isMobile ? "12px" : "28px",
+          fontSize: isMobile ? "12px" : "20px",
           lineHeight: isMobile ? "1.6" : "1.8",
           color: "#696969",
         }}>
