@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import mobileContent from '../../assets/publisher/publisher_mobile_text.svg';
+import mobileContent from '../../assets/publisher/publisher_desktop_text.svg';
 import FixedButton_publisher from './FixedButton_publisher';
 import Modal_publisher from '../common/Modal_publisher';
 import useFingerprint from '../../hooks/useFingerprint';
