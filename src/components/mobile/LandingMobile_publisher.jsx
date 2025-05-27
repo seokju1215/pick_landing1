@@ -25,10 +25,9 @@ function LandingMobile_publisher() {
                     alt="mobileview"
                     style={{ width: '90%', maxWidth: '400px' }}
                 />
-                <div style={{ display: 'flex', flexDirection: "row", gap: "10px", marginTop: "50px", width: '100%', maxWidth: '450px' }}>
-                    <div style={{ flex: 1 }}>
-                        <img src={DesktopLeft1} alt="mobileleft" style={{ width: '100%', height: 'auto', border : '1px solid #E8E8E8'}} />
-                    </div>
+                <div style={{ display: 'flex', flexDirection: "row", gap: "10px", marginTop: "50px", width: '100%', maxWidth: '450px',justifyContent: 'center' }}>
+                        <img src={DesktopLeft1} alt="mobileleft" style={{ width: '85%', height: 'auto', border : '1px solid #E8E8E8'}} />
+
                 </div>
             </div>
             <FixedButton_publisher onClick={() => setIsModalOpen(true)} />
