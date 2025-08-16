@@ -16,7 +16,7 @@ function ApplyButton({ width, height, fontSize, onClick}) {
         }}
         onClick={onClick}
         >
-            <p style={{fontSize : fontSize}}> 지금 크리에이터에게 미션 걸기 →</p>
+            <p style={{fontSize : fontSize}}> 더 알아보기 →</p>
         </div>
     );
 }

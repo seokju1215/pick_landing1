@@ -17,7 +17,7 @@ function App() {
     <Router>
       <DynamicTitleHandler />
       <Routes>
-        <Route exact path="/missionpick" element={isMobile ? <LandingMobile /> : <LandingDesktop />}  />
+        <Route exact path="/book" element={isMobile ? <LandingMobile /> : <LandingDesktop />}  />
         <Route exact path="/mission.pick" element={isMobile ? <LandingMobile2 /> : <LandingDesktop2 />}  />
         <Route exact path="/logue" element={isMobile ? <LandingMobile_logue /> : <LandingDesktop_logue />}  />
         <Route exact path="/publisher" element={isMobile ? <LandingMobile_publisher /> : <LandingDesktop_publisher />}  />
