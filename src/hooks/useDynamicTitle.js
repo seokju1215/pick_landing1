@@ -8,8 +8,8 @@ function DynamicTitleHandler() {
   useEffect(() => {
     const path = location.pathname;
 
-    if (path.startsWith('/missionpick')) {
-      document.title = '크리에이터와 함께 만드는 콘텐츠, 미션 픽';
+    if (path.startsWith('/book')) {
+      document.title = '책 중심 독서모임, 북메이트';
     } else if (path.startsWith('/mission.pick')) {
       document.title = '방송 밖에서도 스트리머와의 소통, 미션 픽';
     } else if (path.startsWith('/logue')) {
